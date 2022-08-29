@@ -15,3 +15,7 @@ Fazendo abstração entre o naipe e valor da carta, o sistema busca trazer o res
 
 Python 3.10.4
 OpenCv-python 4.6.0
+
+# Exemplo funcionamento
+
+![image](https://user-images.githubusercontent.com/53799801/187100320-c3ea88ab-a79f-43b8-899c-2d0c64777d5b.png)
