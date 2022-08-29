@@ -18,4 +18,5 @@ OpenCv-python 4.6.0
 
 # Exemplo funcionamento
 
-![image](https://user-images.githubusercontent.com/53799801/187100320-c3ea88ab-a79f-43b8-899c-2d0c64777d5b.png)
+![image](https://user-images.githubusercontent.com/53799801/187100461-50803edc-92d1-4894-9e04-0bcbd803197f.png)
+**execução bem sucedida**
