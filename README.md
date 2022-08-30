@@ -26,6 +26,6 @@ OpenCv-python 4.6.0
 ![image](https://user-images.githubusercontent.com/53799801/187100557-9789ae30-d153-4b04-9e49-ba7a6b51b54d.png)<br>
 ![image](https://user-images.githubusercontent.com/53799801/187100579-7f51e9a3-0e90-432b-9572-d68b8086bb02.png)<br>
 
-# &copy; Leonardo Salgado
+# &copy; Leonardo Salgado e Victor Vechi
 
 
