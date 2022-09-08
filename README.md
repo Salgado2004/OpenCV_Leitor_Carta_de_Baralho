@@ -19,12 +19,12 @@ OpenCv-python 4.6.0
 # Exemplo funcionamento
 **execução bem sucedida**<br>
 <img src="https://user-images.githubusercontent.com/53799801/187100461-50803edc-92d1-4894-9e04-0bcbd803197f.png" height="300" width="500"><br>
-![image](https://user-images.githubusercontent.com/53799801/187100528-d153c6d0-3acf-40f0-8b56-2374a7c0a3f1.png)<br>
+<img src="https://user-images.githubusercontent.com/53799801/187100528-d153c6d0-3acf-40f0-8b56-2374a7c0a3f1.png" height="300" width="500"><br>
 
 
 **execução mal sucedida**<br>
-![image](https://user-images.githubusercontent.com/53799801/187100557-9789ae30-d153-4b04-9e49-ba7a6b51b54d.png)<br>
-![image](https://user-images.githubusercontent.com/53799801/187100579-7f51e9a3-0e90-432b-9572-d68b8086bb02.png)<br>
+<img src="https://user-images.githubusercontent.com/53799801/187100557-9789ae30-d153-4b04-9e49-ba7a6b51b54d.png" height="300" width="500"><br>
+<img src="https://user-images.githubusercontent.com/53799801/187100579-7f51e9a3-0e90-432b-9572-d68b8086bb02.png" height="300" width="500"><br>
 
 # &copy; Leonardo Salgado e Victor Vechi
 
