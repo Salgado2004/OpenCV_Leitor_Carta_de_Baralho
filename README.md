@@ -1,4 +1,4 @@
-# Leitor de Cartas de Baralho
+# Leitor de Cartas de Baralho com OpenCV
 
 Aplicação com openCv-python para identificação automática da carta de baralho entre as 52 opções. 
 
