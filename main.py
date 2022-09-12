@@ -16,9 +16,11 @@ def load_ranks():
     train_ranks = []
     
     for Rank in ranks:
-        filename = Rank + '.png'
-        dict = {"name": Rank, "img": cv2.imread("cartas/"+filename, cv2.IMREAD_GRAYSCALE)}
-        train_ranks.append(dict)
+        for i in range(13):
+            i += 1
+            filename = Rank + '_'+str(i)+'.png'
+            dict = {"name": Rank, "img": cv2.imread("cartas/"+filename, cv2.IMREAD_GRAYSCALE)}
+            train_ranks.append(dict)
 
     return train_ranks
 
@@ -26,9 +28,11 @@ def load_suits():
     train_suits = []
     
     for Suit in suits:
-        filename = Suit + '.png'
-        dict = {"name": Suit, "img": cv2.imread("cartas/"+filename, cv2.IMREAD_GRAYSCALE)}
-        train_suits.append(dict)
+        for i in range(38):
+            i += 1
+            filename = Suit + '_'+str(i)+'.png'
+            dict = {"name": Suit, "img": cv2.imread("cartas/suits/"+filename, cv2.IMREAD_GRAYSCALE)}
+            train_suits.append(dict)
 
     return train_suits
 
@@ -157,12 +161,14 @@ def stackImages(scale,imgArray):
             if len(imgArray[x].shape) == 2: imgArray[x] = cv2.cvtColor(imgArray[x], cv2.COLOR_GRAY2BGR)
         hor= np.hstack(imgArray)
         ver = hor
-    return ver
+    return ver 
 
+idImg = 14
 while True:
     success, img = cap.read()
     img = cv2.resize(img,(widthImg,heightImg))
     imgContour = img.copy()
+    
 
     imgThres = preProcessing(img)
     biggest = getContours(imgThres)
@@ -177,6 +183,12 @@ while True:
 
         imageArray = ([img, imgThres, imgContour, imgWarped],[imgTest, imgCard, imgRank, imgSuit])
 
+        
+        if cv2.waitKey(1) & 0xFF == ord('a'):
+            cv2.imwrite("cartas/imgRank_"+str(idImg)+".png", imgRank)
+            cv2.imwrite("cartas/imgSuit_"+str(idImg)+".png", imgSuit)
+            idImg += 1
+
     else:
         # imageArray = ([img, imgThres],
         #               [img, img])
@@ -184,6 +196,6 @@ while True:
 
     stackedImages = stackImages(0.4,imageArray)
     cv2.imshow("WorkFlow", stackedImages)
-
+    
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
