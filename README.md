@@ -10,6 +10,8 @@ Realizado pelos alunos Leonardo Felipe Salgado e Victor Henrique Vechi da Info 4
 
 O sistema recebe dados da câmera para identificar as cartas. Utilizando das funções da biblioteca **OpenCv-Python** para filtrar os dados relevantes da imagem. 
 Fazendo abstração entre o naipe e valor da carta, o sistema busca trazer o resultado mais provável dentro de um loop. 
+<br><br>
+Quanto mais amostras de cartas o sistema tiver dentro da pasta **Cartas** melhor serão os resultados. Para demonstração, foi disponibilizado apenas uma amostra para cada tipo de carta.
 
 # Requisitos
 
